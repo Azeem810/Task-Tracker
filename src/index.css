@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right, #008080, #00cccc);
+}
+
+.main-box {
+  box-shadow: 1px 1px 30px;
+  margin: 2% auto;
+  width: 60%;
+  padding: 20px 10px;
+  border-radius: 7px;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+::placeholder {
+  font-size: 17px;
+}
+
+.task-tracker-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.task-list {
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 2px 3px white;
+  margin-top: 10px;
+  width: 86%;
+}
+.task-list-container {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.task-list ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list-name {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.donetask {
+  text-decoration: line-through;
+  color: black;
+}
+
+.task-status {
+  margin-left: -16%;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.task-status-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.tasknumber {
+  color: #e7e30a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 961px) {
+  .main-box {
+    width: 80%;
+  }
+  .task-status-text {
+    font-size: 15px;
+  }
+  .tasknumber {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 598px) {
+  .main-box {
+    width: 90%;
+  }
+  .task-status-text {
+    font-size: 11px;
+  }
+  .tasknumber {
+    font-size: 11px;
+  }
+  .task-list-name {
+    font-size: 15px;
+  }
+  ::placeholder {
+    font-size: 14px;
+  }
+  .task-list {
+    width: 80%;
+  }
+  .task-status {
+    gap: 3%;
+  }
+}
